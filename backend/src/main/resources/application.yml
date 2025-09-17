@@ -1,0 +1,30 @@
+# src/main/resources/application.yml
+spring:
+  application:
+    name: skill-barter-api
+  
+  datasource:
+    url: jdbc:postgresql://localhost:5432/skillbarter
+    username: skillbarter_user
+    password: skillbarter_pass
+    driver-class-name: org.postgresql.Driver
+  
+  jpa:
+    hibernate:
+      ddl-auto: create-drop  # Use 'update' to keep data between restarts
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL10Dialect
+        format_sql: true
+    show-sql: true
+  
+  # Comment out Liquibase for now
+  # liquibase:
+  #   enabled: false
+
+server:
+  port: 8080
+
+logging:
+  level:
+    com.skillbarter: DEBUG
