@@ -89,4 +89,19 @@ public class UserSkill extends BaseEntity {
     
     public Boolean getVerified() { return verified; }
     public void setVerified(Boolean verified) { this.verified = verified; }
+    
+    public LocalDateTime getVerifiedAt() { return verifiedAt; }
+    public void setVerifiedAt(LocalDateTime verifiedAt) { this.verifiedAt = verifiedAt; }
+    
+    public String getVerifiedBy() { return verifiedBy; }
+    public void setVerifiedBy(String verifiedBy) { this.verifiedBy = verifiedBy; }
+    
+    public Double getRating() { return rating; }
+    public void setRating(Double rating) { this.rating = rating; }
+    
+    public Integer getTotalReviews() { return totalReviews; }
+    public void setTotalReviews(Integer totalReviews) { this.totalReviews = totalReviews; }
+    
+    public Integer getCompletedBarters() { return completedBarters; }
+    public void setCompletedBarters(Integer completedBarters) { this.completedBarters = completedBarters; }
 }
